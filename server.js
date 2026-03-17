@@ -1,29 +1,13 @@
 const express = require("express")
 const app = express()
 
-class Mensagem {
-
-    constructor(texto, autor){
-        this.texto = texto
-        this.autor = autor
-        this.data = new Date()
-    }
-
-    toJSON(){
-        return {
-            texto: this.texto,
-            autor: this.autor,
-            data: this.data
-        }
-    }
-
-}
+const Mensagem = require("./mensagem") // importa a classe
 
 app.get("/api/mensagem",(req,res)=>{
 
     const mensagem = new Mensagem(
-        "Olá mundo",
-        "Sistema"
+        "Essa é uma mensagem Hahaha",
+        "MarcosXD"
     )
 
     res.json(mensagem.toJSON())

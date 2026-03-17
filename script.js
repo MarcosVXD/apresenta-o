@@ -1,9 +1,9 @@
 function gerarMensagem(){
 
     const mensagem = new Mensagem(
-        "Olá mundo essa é uma mensagem hahaha",
-        "Marcos"
-    )
+        "Mensagem XD",
+        "Maria Isabel"
+    )   
 
     const json = JSON.stringify(mensagem.toJSON(), null, 2)
 
