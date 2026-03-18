@@ -1,7 +1,7 @@
 const express = require("express")
 const app = express()
 
-const Mensagem = require("./mensagem") // importa a classe
+const Mensagem = require("./Mensagem") // importa a classe
 
 app.get("/api/mensagem",(req,res)=>{
 
